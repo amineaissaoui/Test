@@ -1,0 +1,102 @@
+/* UMAITEK Algeria website main stylesheet */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #F37021;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 1rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero h1 {
+    margin-top: 0;
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.cta-buttons a {
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #F37021;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+section {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.partner-logos img {
+    max-width: 100px;
+    margin: 0.5rem;
+}
+
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.solutions-grid div {
+    background-color: #F0F0F0;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav li {
+        margin: 0.5rem 0;
+    }
+}
