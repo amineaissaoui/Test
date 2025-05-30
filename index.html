@@ -1,54 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Travel Made Easier</title>
+    <title>UMAITEK Algérie - Intégrateur de Solutions IT</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
-
 <body>
     <header>
-        <h1>Wanderlust helps you finding the best plans for your next trip</h1>
-        <img src="Photo/download (1).jpeg">
+        <nav>
+            <div class="logo"><a href="index.html" style="color:#ffffff;text-decoration:none;font-weight:bold;">UMAITEK</a></div>
+            <ul id="main-nav">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">Qui Sommes-Nous</a></li>
+                <li><a href="solutions.html">Nos Solutions</a></li>
+                <li><a href="hpc_solution.html">Solution HPC</a></li>
+                <li><a href="references.html">Références</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button onclick="toggleMenu()" style="background:none;border:none;color:#ffffff;font-size:1.5rem;">☰</button>
+        </nav>
     </header>
-    <main>
-        <div>
-            <h2> Hello World</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, mollitia! Ipsam vitae molestias voluptatibus
-                quidem vel explicabo eveniet harum culpa accusamus laborum beatae, necessitatibus, consequuntur suscipit
-                nulla tenetur cumque in!</p>
+
+    <section class="hero">
+        <h1>UMAITEK - INTÉGRATEUR DE SOLUTIONS IT</h1>
+        <p>Solutions d'infrastructure DataCenter et Cybersécurité innovantes pour votre entreprise en Algérie.</p>
+        <div class="cta-buttons">
+            <a href="solutions.html">Découvrir nos solutions</a>
+            <a href="contact.html">Nous contacter</a>
         </div>
-        <div>
-            <h2>Wecome here</h2>
-            <img src="Photo/download.jpeg" alt="cat">
-            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem molestiae recusandae qui eum dolor temporibus
-                voluptate voluptatum ipsam veniam dolorum ea doloremque explicabo commodi sit ratione, voluptates quasi officia
-                et?
+    </section>
+
+    <section>
+        <h2>Présentation</h2>
+        <p>Fondée en 2010, UMAITEK Algérie est votre partenaire de confiance pour des prestations de qualité à forte valeur ajoutée.</p>
+    </section>
+
+    <section>
+        <h2>Nos principales catégories de solutions</h2>
+        <div class="solutions-grid">
+            <div>
+                <strong>Infrastructure DataCenter & Cloud</strong>
             </div>
-    </div>
-    </main>
+            <div>
+                <strong>Cybersécurité</strong>
+            </div>
+            <div>
+                <strong>Solutions Collaboratives & Applicatives</strong>
+            </div>
+            <div>
+                <strong>Prestations de Services Professionnels</strong>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Nos partenaires</h2>
+        <div class="partner-logos">
+            <img src="images/placeholder.png" alt="Redhat">
+            <img src="images/placeholder.png" alt="Zimbra">
+            <img src="images/placeholder.png" alt="Alfresco">
+            <img src="images/placeholder.png" alt="SOPHOS">
+            <img src="images/placeholder.png" alt="Fortinet">
+            <img src="images/placeholder.png" alt="Rapid7">
+            <img src="images/placeholder.png" alt="Supermicro">
+            <img src="images/placeholder.png" alt="HPE">
+        </div>
+    </section>
+
     <footer>
-    <form>
-    <select>
-        <option value="0" disabled>>-select a destination-</option>
-        <option value="1">New York</option>
-        <option value="2">Barcelona</option>
-        <option value="3">London</option>
-    </select>
-    <br>
-    <label> Email:</label> <br>
-    <input type="email" required placeholder="Your email adress"> 
-    <br>
-    <label>password :</label> 
-    <br>
-    <input type="password" required placeholder="Your password"> <br>
-    <textarea placeholder="Send us more info" rows="5" cols="50"></textarea> <br>
-    <button>Send</button>
-
-    </form>
+        <p>Copyright © UMAITEK <span id="year"></span>. Tous droits réservés.</p>
+        <p>Cité Pons Villa N°178 Jolie Vue 2 Kouba 16050 Alger ALGERIE - <a href="http://www.umaitek.dz" style="color:#ffffff;">www.umaitek.dz</a></p>
     </footer>
-</body>
 
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
 </html>
